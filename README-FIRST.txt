@@ -1,29 +1,30 @@
-IMMISPATINA V7 — PROFESSIONAL PHOTOS
+IMMISPATINA V8 — INTERNAL PAGES FIX
 
-Upload/replace these files in the repository root:
-- index.html
-- home-premium.css
-- home-premium.js
+Replace / upload ONLY:
 - digital-nomad.html
 - renewal.html
 - student-family.html
 - homologacion.html
 - about.html
+- service-pages.css (NEW)
+- service-pages.js (NEW)
 
-Keep unchanged:
+DO NOT TOUCH:
+- index.html
+- home-premium.css
+- home-premium.js
 - contact.html
 - styles.css
 - script.js
 - assets/immispatina-logo.png
 
-This version uses remote Unsplash-hosted image URLs to avoid image-file upload mistakes and preserve layout.
-Selected photography:
-- Home Hero: Puerta de Alcalá, Madrid
-- Home Why: Madrid skyline
-- Digital Nomad: remote-work/travel scene
-- Renewal: professional work scene
-- Student & Family: Madrid Retiro lifestyle
-- Homologación: certificate/document image
-- About: professional consultation/teamwork
-
-No page structure has been rebuilt; only visual photo blocks / backgrounds were added.
+Fixes:
+- Back to Home removed from page hero
+- page title + description now sit professionally on the photo
+- larger logo on desktop, iPad and mobile
+- Digital Nomad photo changed to laptop + Spanish passport
+- iPad white space reduced
+- desktop cards remain 4-column
+- iPad cards become 2x2
+- mobile cards become clean single-column
+- separate CSS/JS prevents Home from being affected
