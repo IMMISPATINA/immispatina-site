@@ -446,3 +446,25 @@ footer>span{font-size:.78rem;color:#aab1bf}
     height:24px;
   }
 }
+/* Instagram */
+
+.footer-instagram{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  margin-top:12px;
+  color:#c3cad5;
+  font-size:.84rem;
+  transition:.2s;
+}
+
+.footer-instagram:hover{
+  color:#ffffff;
+}
+
+.instagram-icon{
+  width:18px;
+  height:18px;
+  flex:0 0 18px;
+  display:block;
+}
