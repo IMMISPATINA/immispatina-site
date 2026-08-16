@@ -1,4 +1,16 @@
-IMMISPATINA V10 — INTERNAL PAGE ICONS ONLY
+IMMISPATINA V11 — SMALL ELEGANT INTERNAL ICONS
+
+This corrects the oversized V10 icons.
+
+Desktop/tablet:
+- icon container: 38 x 38 px
+- SVG: 18 x 18 px
+
+Mobile:
+- icon container: 34 x 34 px
+- SVG: 16 x 16 px
+
+The icon circles were also changed to subtle rounded squares for a cleaner professional look.
 
 Replace ONLY:
 - digital-nomad.html
@@ -7,15 +19,4 @@ Replace ONLY:
 - homologacion.html
 - service-pages.css
 
-No changes to:
-- Home
-- index.html
-- home-premium.css
-- home-premium.js
-- contact.html
-- forms
-- hero photos
-- menu structure
-
-Change made:
-The unattractive 01 / 02 / 03 / 04 labels on internal feature cards were replaced with professional SVG icons relevant to each service.
+Home/index and Contact are untouched.

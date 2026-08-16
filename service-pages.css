@@ -328,3 +328,56 @@ footer>span{font-size:.78rem;color:#aab1bf}
     margin:20px 0 10px !important;
   }
 }
+
+
+/* ===== V11: SMALL, ELEGANT INTERNAL ICONS ===== */
+/* Keeps layout intact; only reduces/refines the V10 feature icons. */
+.feature-icon{
+  width:38px !important;
+  height:38px !important;
+  min-width:38px !important;
+  min-height:38px !important;
+  flex:0 0 38px !important;
+  display:inline-grid !important;
+  place-items:center !important;
+  border-radius:10px !important;
+  background:#fbf4f5 !important;
+  color:var(--wine) !important;
+  border:1px solid #eadcdf !important;
+  box-shadow:none !important;
+  margin:0 0 18px 0 !important;
+}
+.feature-icon svg{
+  width:18px !important;
+  height:18px !important;
+  max-width:18px !important;
+  max-height:18px !important;
+  display:block !important;
+  fill:none !important;
+  stroke:currentColor !important;
+  stroke-width:1.65 !important;
+  vector-effect:non-scaling-stroke;
+}
+.feature-card h3{
+  margin:4px 0 12px !important;
+}
+@media(max-width:650px){
+  .feature-icon{
+    width:34px !important;
+    height:34px !important;
+    min-width:34px !important;
+    min-height:34px !important;
+    flex-basis:34px !important;
+    border-radius:9px !important;
+    margin-bottom:14px !important;
+  }
+  .feature-icon svg{
+    width:16px !important;
+    height:16px !important;
+    max-width:16px !important;
+    max-height:16px !important;
+  }
+  .feature-card h3{
+    margin:3px 0 10px !important;
+  }
+}
