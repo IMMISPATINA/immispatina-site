@@ -526,3 +526,10 @@ footer>span{font-size:.78rem;color:#aab1bf}
     max-width:24px !important;
   }
 }
+
+/* MULTILINGUAL SWITCHER */
+.language-switcher{display:inline-flex;align-items:center;gap:3px;margin-left:4px;padding:3px;border:1px solid rgba(113,19,34,.16);border-radius:999px;background:rgba(255,255,255,.72);white-space:nowrap}
+.language-switcher a{display:inline-flex!important;align-items:center;justify-content:center;min-width:29px;height:27px;padding:0 6px!important;margin:0!important;border-radius:999px;font-family:"DM Sans",sans-serif;font-size:.66rem!important;font-weight:700;letter-spacing:.04em;line-height:1!important}
+.language-switcher a:after{display:none!important}
+.language-switcher a.lang-active{background:#711322;color:#fff!important}
+@media(max-width:1050px){.language-switcher{align-self:flex-start;margin:8px 0 4px}.language-switcher a{padding:0 8px!important}}

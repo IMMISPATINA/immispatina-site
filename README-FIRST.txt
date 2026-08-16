@@ -1,19 +1,22 @@
-IMMISPATINA — HOUSING MENU UPDATE
+IMMISPATINA MULTILINGUAL — EN / ES / FA / TR
 
-Replace/upload these HTML files:
-- index.html
-- digital-nomad.html
-- renewal.html
-- homologacion.html
-- student-family.html
-- housing.html
-- about.html
-- contact.html
+Upload the complete contents to the site root.
 
-Change made:
-- Added "Housing" to the navigation menu on every page.
-- housing.html is included as the new Housing & Accommodation page.
+English remains at /
+Spanish: /es/
+Persian: /fa/ (RTL)
+Turkish: /tr/
 
-No CSS files were changed.
-No form logic was changed.
-No existing page content was redesigned.
+All 8 pages are included in every language:
+Home, Digital Nomad, Renewal, Homologación, Student & Family, Housing, About, Contact.
+
+Features:
+- EN / ES / FA / TR selector on every page.
+- Same-page language switching.
+- hreflang SEO tags.
+- Persian RTL layout.
+- Localized title/meta description.
+- Contact keeps the existing Formspree endpoint.
+- Localized Contact forms add site_language.
+
+Keep your existing /assets folder unchanged.

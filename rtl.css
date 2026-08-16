@@ -1,0 +1,11 @@
+
+html[dir="rtl"] body{direction:rtl;text-align:right}
+html[dir="rtl"] header,html[dir="rtl"] .site-header,html[dir="rtl"] nav,html[dir="rtl"] .main-nav{direction:rtl}
+html[dir="rtl"] .language-switcher{direction:ltr;margin-left:0;margin-right:4px}
+html[dir="rtl"] .hero-copy,html[dir="rtl"] .page-hero-content,html[dir="rtl"] .section-heading,html[dir="rtl"] .why-content,html[dir="rtl"] .content-split,html[dir="rtl"] .contactbox,html[dir="rtl"] .consult-form{text-align:right}
+html[dir="rtl"] .hero-actions,html[dir="rtl"] .cta-actions{justify-content:flex-start}
+html[dir="rtl"] .service-card{text-align:center}
+html[dir="rtl"] input,html[dir="rtl"] textarea,html[dir="rtl"] select{direction:rtl;text-align:right}
+html[dir="rtl"] input[type="email"],html[dir="rtl"] input[type="tel"]{direction:ltr;text-align:left}
+html[dir="rtl"] .wa,html[dir="rtl"] .floating-wa{right:auto!important;left:18px!important}
+@media(max-width:650px){html[dir="rtl"] .wa,html[dir="rtl"] .floating-wa{left:12px!important}}
