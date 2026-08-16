@@ -6,7 +6,42 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
-<title>Student & Family Spain | IMMISPATINA</title><meta name="description" content="Student and family residency support in Spain."></head><body>
+<title>Student & Family Spain | IMMISPATINA</title><meta name="description" content="Student and family residency support in Spain.">
+<style>
+.page-photo{
+  min-height:470px;
+  border-radius:150px 150px 26px 26px;
+  background-size:cover;
+  background-position:center;
+  position:relative;
+  overflow:hidden;
+  box-shadow:0 28px 70px rgba(20,26,42,.16);
+}
+.page-photo::after{
+  content:"";
+  position:absolute;inset:0;
+  background:linear-gradient(180deg,transparent 30%,rgba(13,26,49,.72) 100%);
+}
+.page-photo-copy{
+  position:absolute;left:28px;right:28px;bottom:28px;z-index:2;color:white;
+}
+.page-photo-copy span{
+  display:block;color:#e7c97e;font-size:.7rem;letter-spacing:.14em;margin-bottom:8px;
+}
+.page-photo-copy h2{
+  margin:0;color:white;font-size:clamp(1.8rem,3vw,3rem);
+}
+@media(max-width:850px){
+  .page-photo{min-height:330px;border-radius:28px}
+}
+@media(max-width:600px){
+  .page-photo{min-height:260px;border-radius:20px}
+  .page-photo-copy{left:18px;right:18px;bottom:18px}
+  .page-photo-copy h2{font-size:1.7rem}
+}
+</style>
+
+</head><body>
 
 <header>
   <a class="logo" href="index.html">
@@ -27,7 +62,9 @@
 <main>
 <section class="subhero">
   <div><p class="eyebrow">STUDENT & FAMILY</p><h1>Study in Spain. Bring your plans together.</h1><p class="lead">Support for student-related residence procedures and eligible family members.</p><div class="actions"><a class="btn" href="contact.html">Book a consultation</a><a class="ghost" href="index.html">Back to Home</a></div></div>
-  <div class="subhero-card"><span>IMMISPATINA · SPAIN</span><h2>Clear guidance for your next step.</h2></div>
+  <div class="page-photo" style="background-image:url('https://images.unsplash.com/photo-1750691434727-f06f7bfe4041?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1800')">
+    <div class="page-photo-copy"><span>STUDENT & FAMILY</span><h2>Study, relocate and settle with support.</h2></div>
+  </div>
 </section>
 <section class="section"><div class="service-grid"><article class="service-card"><span>01</span><h3>Student documentation</h3><p>Practical preparation support for study-related residence documentation.</p></article><article class="service-card"><span>02</span><h3>Family members</h3><p>Support organising documents for eligible spouses and children.</p></article><article class="service-card"><span>03</span><h3>Insurance & finance</h3><p>Review of common supporting evidence for the application file.</p></article><article class="service-card"><span>04</span><h3>Arrival steps</h3><p>Guidance on common administrative steps after arriving in Spain.</p></article></div></section>
 <section class="section cta"><div><p class="eyebrow">NEXT STEP</p><h2>Tell us about your situation.</h2></div><a class="btn" href="contact.html">Contact IMMISPATINA</a></section>

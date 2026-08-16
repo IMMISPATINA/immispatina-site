@@ -240,3 +240,47 @@ h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.05}
   .service-grid,.benefit-grid{grid-template-columns:1fr}
   .service-card{min-height:225px}
 }
+
+
+/* ===== V7 PROFESSIONAL PHOTO OVERRIDES ===== */
+.hero{
+  background:
+    linear-gradient(90deg,rgba(8,17,33,.92) 0%,rgba(8,17,33,.78) 40%,rgba(8,17,33,.26) 70%,rgba(8,17,33,.08) 100%),
+    url("https://images.unsplash.com/photo-1518620121781-adab13a3d1ef?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=2200") center/cover no-repeat !important;
+  grid-template-columns:1fr !important;
+}
+.hero-copy{
+  max-width:760px;
+}
+.hero-visual{
+  display:none !important;
+}
+
+.why-visual{
+  background:
+    linear-gradient(180deg,rgba(13,26,49,.06),rgba(13,26,49,.18)),
+    url("https://images.unsplash.com/photo-1612567740699-4a658d6e4122?auto=format&fit=crop&fm=jpg&ixlib=rb-4.1.0&q=82&w=1800") center/cover no-repeat !important;
+  min-height:500px;
+}
+.why-visual .spain-ribbon,
+.why-visual .why-skyline{
+  display:none !important;
+}
+.why-badge{
+  background:rgba(255,255,255,.93);
+  backdrop-filter:blur(7px);
+  box-shadow:0 14px 34px rgba(0,0,0,.14);
+}
+
+@media(max-width:650px){
+  .hero{
+    background-position:58% center !important;
+  }
+  .hero-copy{
+    padding:62px 20px 58px;
+  }
+  .why-visual{
+    min-height:270px;
+    background-position:center center !important;
+  }
+}
