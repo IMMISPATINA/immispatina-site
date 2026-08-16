@@ -1,11 +1,329 @@
 
-html[dir="rtl"] body{direction:rtl;text-align:right}
-html[dir="rtl"] header,html[dir="rtl"] .site-header,html[dir="rtl"] nav,html[dir="rtl"] .main-nav{direction:rtl}
-html[dir="rtl"] .language-switcher{direction:ltr;margin-left:0;margin-right:4px}
-html[dir="rtl"] .hero-copy,html[dir="rtl"] .page-hero-content,html[dir="rtl"] .section-heading,html[dir="rtl"] .why-content,html[dir="rtl"] .content-split,html[dir="rtl"] .contactbox,html[dir="rtl"] .consult-form{text-align:right}
-html[dir="rtl"] .hero-actions,html[dir="rtl"] .cta-actions{justify-content:flex-start}
-html[dir="rtl"] .service-card{text-align:center}
-html[dir="rtl"] input,html[dir="rtl"] textarea,html[dir="rtl"] select{direction:rtl;text-align:right}
-html[dir="rtl"] input[type="email"],html[dir="rtl"] input[type="tel"]{direction:ltr;text-align:left}
-html[dir="rtl"] .wa,html[dir="rtl"] .floating-wa{right:auto!important;left:18px!important}
-@media(max-width:650px){html[dir="rtl"] .wa,html[dir="rtl"] .floating-wa{left:12px!important}}
+/* =========================================================
+   IMMISPATINA — PERSIAN PREMIUM RTL
+   ========================================================= */
+
+html[lang="fa"] body{
+  direction:rtl;
+  text-align:right;
+  font-family:"Vazirmatn","Tahoma","Arial",sans-serif !important;
+  font-weight:400;
+  line-height:1.9;
+  letter-spacing:0;
+}
+
+/* Persian headings: cleaner, more premium, less oversized */
+html[lang="fa"] h1,
+html[lang="fa"] h2,
+html[lang="fa"] h3,
+html[lang="fa"] h4,
+html[lang="fa"] strong{
+  font-family:"Vazirmatn","Tahoma","Arial",sans-serif !important;
+  letter-spacing:0 !important;
+}
+
+html[lang="fa"] h1{
+  font-weight:800 !important;
+  line-height:1.25 !important;
+}
+
+html[lang="fa"] h2{
+  font-weight:700 !important;
+  line-height:1.35 !important;
+}
+
+html[lang="fa"] h3{
+  font-weight:700 !important;
+  line-height:1.45 !important;
+}
+
+html[lang="fa"] p,
+html[lang="fa"] li,
+html[lang="fa"] span,
+html[lang="fa"] a,
+html[lang="fa"] label,
+html[lang="fa"] input,
+html[lang="fa"] textarea,
+html[lang="fa"] select,
+html[lang="fa"] button{
+  font-family:"Vazirmatn","Tahoma","Arial",sans-serif !important;
+}
+
+/* Header */
+html[lang="fa"] header,
+html[lang="fa"] .site-header{
+  direction:rtl;
+}
+
+html[lang="fa"] nav,
+html[lang="fa"] .main-nav{
+  direction:rtl;
+}
+
+html[lang="fa"] nav > a,
+html[lang="fa"] .main-nav > a{
+  font-size:.82rem;
+  font-weight:600;
+  letter-spacing:0 !important;
+}
+
+html[lang="fa"] .language-switcher{
+  direction:ltr !important;
+  margin-left:0 !important;
+  margin-right:8px !important;
+}
+
+/* Preserve logo left/right balance without mirroring the artwork */
+html[lang="fa"] .logo img,
+html[lang="fa"] .brand img,
+html[lang="fa"] footer img,
+html[lang="fa"] .footer-brand img{
+  direction:ltr;
+}
+
+/* Eyebrows should not use wide Latin tracking */
+html[lang="fa"] .eyebrow,
+html[lang="fa"] .kicker{
+  letter-spacing:.04em !important;
+  font-weight:700 !important;
+}
+
+/* Main content alignment */
+html[lang="fa"] .hero-copy,
+html[lang="fa"] .page-hero-content,
+html[lang="fa"] .section-heading,
+html[lang="fa"] .why-content,
+html[lang="fa"] .content-split,
+html[lang="fa"] .form-layout,
+html[lang="fa"] .contactbox,
+html[lang="fa"] .consult-form,
+html[lang="fa"] .cta,
+html[lang="fa"] .cta-band{
+  text-align:right;
+}
+
+/* Hero typography */
+html[lang="fa"] .hero h1{
+  font-size:clamp(3rem,5.3vw,5.8rem) !important;
+  max-width:760px;
+}
+
+html[lang="fa"] .page-hero h1,
+html[lang="fa"] .subhero h1{
+  font-size:clamp(2.8rem,5vw,5.2rem) !important;
+  max-width:800px;
+}
+
+html[lang="fa"] .hero p,
+html[lang="fa"] .page-hero .lead,
+html[lang="fa"] .subhero .lead{
+  line-height:1.9 !important;
+  font-size:1.02rem !important;
+}
+
+/* Buttons */
+html[lang="fa"] .hero-actions,
+html[lang="fa"] .cta-actions,
+html[lang="fa"] .actions{
+  justify-content:flex-start;
+}
+
+html[lang="fa"] .btn,
+html[lang="fa"] .ghost,
+html[lang="fa"] .nav-cta,
+html[lang="fa"] .outline{
+  font-weight:700 !important;
+  letter-spacing:0 !important;
+}
+
+/* Service cards */
+html[lang="fa"] .service-card,
+html[lang="fa"] .feature-card{
+  text-align:right !important;
+}
+
+html[lang="fa"] .service-card h3,
+html[lang="fa"] .feature-card h3{
+  font-size:1.32rem !important;
+  line-height:1.45 !important;
+}
+
+html[lang="fa"] .service-card p,
+html[lang="fa"] .feature-card p{
+  line-height:1.9 !important;
+  font-size:.9rem !important;
+}
+
+html[lang="fa"] .service-card a{
+  align-self:flex-start;
+}
+
+/* Keep visual icons centered */
+html[lang="fa"] .service-icon,
+html[lang="fa"] .trust-icon,
+html[lang="fa"] .process-step > span,
+html[lang="fa"] .benefit > span{
+  direction:ltr;
+}
+
+/* Benefits */
+html[lang="fa"] .benefit{
+  direction:rtl;
+  text-align:right;
+}
+
+html[lang="fa"] .benefit strong{
+  font-size:.9rem;
+}
+
+html[lang="fa"] .benefit p{
+  line-height:1.8 !important;
+}
+
+/* Process */
+html[lang="fa"] .process-step{
+  text-align:center;
+}
+
+html[lang="fa"] .process-step h3{
+  font-size:1.05rem !important;
+}
+
+html[lang="fa"] .process-step p{
+  line-height:1.75 !important;
+}
+
+/* FAQ */
+html[lang="fa"] .faq-grid details{
+  text-align:right;
+}
+
+html[lang="fa"] .faq-grid summary{
+  font-weight:700;
+  line-height:1.8;
+}
+
+html[lang="fa"] .faq-grid p{
+  line-height:1.9 !important;
+}
+
+/* Contact */
+html[lang="fa"] .contactbox > a,
+html[lang="fa"] .contactbox > p{
+  direction:rtl;
+}
+
+html[lang="fa"] .contactbox b{
+  text-align:left;
+  direction:ltr;
+}
+
+html[lang="fa"] .instagram-name{
+  direction:ltr !important;
+}
+
+html[lang="fa"] .consult-form label{
+  font-weight:600;
+}
+
+html[lang="fa"] input,
+html[lang="fa"] textarea,
+html[lang="fa"] select{
+  direction:rtl;
+  text-align:right;
+  line-height:1.7;
+}
+
+html[lang="fa"] input[type="email"],
+html[lang="fa"] input[type="tel"]{
+  direction:ltr;
+  text-align:left;
+}
+
+/* Footer */
+html[lang="fa"] footer,
+html[lang="fa"] .site-footer{
+  direction:rtl;
+  text-align:right;
+}
+
+html[lang="fa"] .footer-instagram{
+  direction:ltr !important;
+  justify-content:flex-end;
+}
+
+/* Floating WhatsApp moves to left in RTL */
+html[lang="fa"] .wa,
+html[lang="fa"] .floating-wa{
+  right:auto !important;
+  left:18px !important;
+}
+
+/* Tablet */
+@media(max-width:1050px){
+  html[lang="fa"] nav,
+  html[lang="fa"] .main-nav{
+    text-align:right;
+  }
+
+  html[lang="fa"] .language-switcher{
+    align-self:flex-end !important;
+    margin:8px 0 4px !important;
+  }
+}
+
+/* Mobile */
+@media(max-width:650px){
+  html[lang="fa"] body{
+    font-size:15.5px;
+    line-height:1.9;
+  }
+
+  html[lang="fa"] .hero h1{
+    font-size:clamp(2.65rem,11vw,3.65rem) !important;
+    line-height:1.28 !important;
+  }
+
+  html[lang="fa"] .page-hero h1,
+  html[lang="fa"] .subhero h1{
+    font-size:clamp(2.45rem,10.5vw,3.35rem) !important;
+    line-height:1.3 !important;
+  }
+
+  html[lang="fa"] .section-heading h2,
+  html[lang="fa"] .why-content h2,
+  html[lang="fa"] .cta-band h2,
+  html[lang="fa"] .cta h2{
+    font-size:clamp(2rem,8.5vw,2.65rem) !important;
+    line-height:1.38 !important;
+  }
+
+  html[lang="fa"] .service-card,
+  html[lang="fa"] .feature-card{
+    text-align:right !important;
+  }
+
+  html[lang="fa"] .service-card h3,
+  html[lang="fa"] .feature-card h3{
+    font-size:1.12rem !important;
+  }
+
+  html[lang="fa"] .contactbox > a,
+  html[lang="fa"] .contactbox > p{
+    flex-direction:row !important;
+    align-items:center;
+  }
+
+  html[lang="fa"] .contactbox span{
+    text-align:right;
+  }
+
+  html[lang="fa"] .contactbox b{
+    text-align:left;
+  }
+
+  html[lang="fa"] .wa,
+  html[lang="fa"] .floating-wa{
+    left:12px !important;
+  }
+}

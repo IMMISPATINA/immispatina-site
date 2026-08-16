@@ -20,3 +20,10 @@ Features:
 - Localized Contact forms add site_language.
 
 Keep your existing /assets folder unchanged.
+
+
+PERSIAN PREMIUM V2
+- Persian font changed to Vazirmatn via Google Fonts.
+- Persian headings, line-height, card alignment and mobile typography refined.
+- RTL header, footer, forms and WhatsApp placement refined.
+- No font files are included in this package.
