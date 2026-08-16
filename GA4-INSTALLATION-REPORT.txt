@@ -1,0 +1,16 @@
+IMMISPATINA GA4 INSTALLATION REPORT
+
+Measurement ID: G-ZN3Z3Y0T60
+
+HTML pages updated: 60
+Pages already containing this GA4 ID: 0
+Total HTML pages checked: 60
+
+Changes made:
+- Added Google tag (gtag.js) before </head> on every HTML page.
+- No page content, layout, CSS, translations, forms, SEO metadata, sitemap, robots.txt, or internal links were changed.
+
+After deployment:
+1. Open https://www.immispatina.com in an Incognito/Private window.
+2. In Google Analytics 4 go to Reports > Realtime.
+3. You should see your visit within a short time.
