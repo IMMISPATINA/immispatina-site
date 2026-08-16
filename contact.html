@@ -1,31 +1,149 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
-<title>Contact IMMISPATINA | Consultation</title><meta name="description" content="Request a consultation with IMMISPATINA.">
-<style>
-.form-layout{display:grid;grid-template-columns:.85fr 1.15fr;gap:6vw}
-.consult-form{background:white;border:1px solid var(--line);border-radius:24px;padding:28px}
-.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-.field{display:flex;flex-direction:column;gap:7px;margin-bottom:14px}
-.field.full{grid-column:1/-1}
-.field input,.field select,.field textarea{border:1px solid var(--line);border-radius:14px;padding:13px 14px;font:inherit}
-.field textarea{min-height:150px}
-.status{display:none;margin-top:14px;padding:12px;border-radius:12px}
-.status.success{display:block;background:#edf8f1;color:#1d6a42}
-.status.error{display:block;background:#fff1f1;color:#8b1e2d}
-@media(max-width:850px){.form-layout,.field-grid{grid-template-columns:1fr}}
-</style></head><body>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Contact IMMISPATINA | Consultation</title>
+  <meta name="description" content="Request a consultation with IMMISPATINA.">
+
+  <style>
+    .form-layout{
+      display:grid;
+      grid-template-columns:.85fr 1.15fr;
+      gap:6vw;
+    }
+
+    .consult-form{
+      background:white;
+      border:1px solid var(--line);
+      border-radius:24px;
+      padding:28px;
+    }
+
+    .field-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:16px;
+    }
+
+    .field{
+      display:flex;
+      flex-direction:column;
+      gap:7px;
+      margin-bottom:14px;
+    }
+
+    .field.full{
+      grid-column:1/-1;
+    }
+
+    .field input,
+    .field select,
+    .field textarea{
+      border:1px solid var(--line);
+      border-radius:14px;
+      padding:13px 14px;
+      font:inherit;
+    }
+
+    .field textarea{
+      min-height:150px;
+    }
+
+    .status{
+      display:none;
+      margin-top:14px;
+      padding:12px;
+      border-radius:12px;
+    }
+
+    .status.success{
+      display:block;
+      background:#edf8f1;
+      color:#1d6a42;
+    }
+
+    .status.error{
+      display:block;
+      background:#fff1f1;
+      color:#8b1e2d;
+    }
+
+    .contactbox a{
+      transition:color .2s ease, transform .2s ease;
+    }
+
+    .contactbox a:hover{
+      color:#c99833;
+      transform:translateX(2px);
+    }
+
+    .instagram-link{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+    }
+
+    .instagram-name{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+
+    .instagram-icon{
+      width:18px;
+      height:18px;
+      flex:0 0 18px;
+      stroke:currentColor;
+      fill:none;
+      stroke-width:1.8;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+    }
+
+    .footer-social{
+      margin-top:10px;
+    }
+
+    .footer-social a{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      color:#c3cad5;
+      font-size:.84rem;
+      transition:color .2s ease;
+    }
+
+    .footer-social a:hover{
+      color:#c99833;
+    }
+
+    @media(max-width:850px){
+      .form-layout,
+      .field-grid{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
 
 <header>
   <a class="logo" href="index.html">
     <img src="assets/immispatina-logo.png" alt="IMMISPATINA">
   </a>
+
   <button class="menu" aria-label="Open menu">☰</button>
+
   <nav>
     <a href="index.html">Home</a>
     <a href="digital-nomad.html">Digital Nomad</a>
@@ -38,51 +156,222 @@
 </header>
 
 <main>
+
 <section class="subhero">
-  <div><p class="eyebrow">CONSULTATION REQUEST</p><h1>Tell us about your Spain plans.</h1><p class="lead">Complete the form and IMMISPATINA will review your request and contact you.</p></div>
-  <div class="subhero-card"><span>IMMISPATINA · MADRID</span><h2>Start with a clear first step.</h2></div>
+  <div>
+    <p class="eyebrow">CONSULTATION REQUEST</p>
+    <h1>Tell us about your Spain plans.</h1>
+    <p class="lead">
+      Complete the form and IMMISPATINA will review your request and contact you.
+    </p>
+  </div>
+
+  <div class="subhero-card">
+    <span>IMMISPATINA · MADRID</span>
+    <h2>Start with a clear first step.</h2>
+  </div>
 </section>
 
 <section class="section form-layout">
+
   <div>
-    <p class="eyebrow">CONTACT</p><h2>Useful information helps us understand your case faster.</h2>
+    <p class="eyebrow">CONTACT</p>
+    <h2>Useful information helps us understand your case faster.</h2>
+
     <div class="contactbox">
-      <a href="mailto:info@immispatina.com"><span>Email</span><b>info@immispatina.com</b></a>
-      <a href="tel:+34687704601"><span>Spain</span><b>+34 687 704 601</b></a>
-      <a href="tel:+905375178488"><span>Türkiye</span><b>+90 537 517 8488</b></a>
+
+      <a href="mailto:info@immispatina.com">
+        <span>Email</span>
+        <b>info@immispatina.com</b>
+      </a>
+
+      <a href="tel:+34687704601">
+        <span>Spain</span>
+        <b>+34 687 704 601</b>
+      </a>
+
+      <a href="tel:+905375178488">
+        <span>Türkiye</span>
+        <b>+90 537 517 8488</b>
+      </a>
+
+      <a
+        class="instagram-link"
+        href="https://www.instagram.com/immispatina/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span>Instagram</span>
+
+        <b class="instagram-name">
+          <svg class="instagram-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+            <circle cx="12" cy="12" r="4"></circle>
+            <circle cx="17.5" cy="6.5" r="1"></circle>
+          </svg>
+          @immispatina
+        </b>
+      </a>
+
     </div>
   </div>
 
-  <form class="consult-form" id="consultationForm" action="https://formspree.io/f/xjybepvb" method="POST">
-    <input type="hidden" name="_subject" value="New IMMISPATINA Consultation Request">
+  <form
+    class="consult-form"
+    id="consultationForm"
+    action="https://formspree.io/f/xjybepvb"
+    method="POST"
+  >
+
+    <input
+      type="hidden"
+      name="_subject"
+      value="New IMMISPATINA Consultation Request"
+    >
+
     <div class="field-grid">
-      <div class="field"><label>Full name *</label><input name="name" required></div>
-      <div class="field"><label>Email *</label><input name="email" type="email" required></div>
-      <div class="field"><label>WhatsApp / Phone</label><input name="phone"></div>
-      <div class="field"><label>Nationality</label><input name="nationality"></div>
-      <div class="field"><label>Current country *</label><input name="country" required></div>
-      <div class="field"><label>Service required *</label><select name="service" required><option value="">Select</option><option>Digital Nomad Residency</option><option>Residency Renewal</option><option>Student & Family</option><option>Homologación</option><option>NIE / TIE</option><option>Relocation Support</option><option>Other</option></select></div>
-      <div class="field full"><label>Tell us about your case *</label><textarea name="message" required></textarea></div>
+
+      <div class="field">
+        <label>Full name *</label>
+        <input name="name" required>
+      </div>
+
+      <div class="field">
+        <label>Email *</label>
+        <input name="email" type="email" required>
+      </div>
+
+      <div class="field">
+        <label>WhatsApp / Phone</label>
+        <input name="phone">
+      </div>
+
+      <div class="field">
+        <label>Nationality</label>
+        <input name="nationality">
+      </div>
+
+      <div class="field">
+        <label>Current country *</label>
+        <input name="country" required>
+      </div>
+
+      <div class="field">
+        <label>Service required *</label>
+        <select name="service" required>
+          <option value="">Select</option>
+          <option>Digital Nomad Residency</option>
+          <option>Residency Renewal</option>
+          <option>Student & Family</option>
+          <option>Homologación</option>
+          <option>NIE / TIE</option>
+          <option>Relocation Support</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <div class="field full">
+        <label>Tell us about your case *</label>
+        <textarea name="message" required></textarea>
+      </div>
+
     </div>
-    <button class="btn full" id="submitButton" type="submit">Request a Consultation</button>
+
+    <button
+      class="btn full"
+      id="submitButton"
+      type="submit"
+    >
+      Request a Consultation
+    </button>
+
     <div id="formStatus" class="status"></div>
+
   </form>
+
 </section>
+
 </main>
 
-<a class="wa" href="https://wa.me/34687704601?text=Hello%20IMMISPATINA%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener">WA</a>
+<a
+  class="wa"
+  href="https://wa.me/34687704601?text=Hello%20IMMISPATINA%2C%20I%20would%20like%20to%20book%20a%20consultation."
+  target="_blank"
+  rel="noopener"
+>
+  WA
+</a>
+
 <footer>
+
   <img src="assets/immispatina-logo.png" alt="IMMISPATINA">
+
   <div>
     <p>Residency · Immigration Support · Relocation · Spain</p>
-    <small>IMMISPATINA provides immigration and administrative support services. Where regulated legal advice or representation is required, services should be provided or supervised by an appropriately qualified professional.</small>
+
+    <div class="footer-social">
+      <a
+        href="https://www.instagram.com/immispatina/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <svg class="instagram-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="3" width="18" height="18" rx="5"></rect>
+          <circle cx="12" cy="12" r="4"></circle>
+          <circle cx="17.5" cy="6.5" r="1"></circle>
+        </svg>
+        Instagram @immispatina
+      </a>
+    </div>
+
+    <small>
+      IMMISPATINA provides immigration and administrative support services.
+      Where regulated legal advice or representation is required, services should
+      be provided or supervised by an appropriately qualified professional.
+    </small>
   </div>
+
   <span>© 2026 IMMISPATINA</span>
+
 </footer>
+
 <script src="script.js"></script>
 
 <script>
-const form=document.getElementById('consultationForm'),statusBox=document.getElementById('formStatus'),btn=document.getElementById('submitButton');
-form.addEventListener('submit',async(e)=>{e.preventDefault();btn.disabled=true;btn.textContent='Sending...';statusBox.className='status';try{const r=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{'Accept':'application/json'}});if(!r.ok)throw new Error();statusBox.className='status success';statusBox.textContent='Thank you. Your request has been received.';form.reset();}catch{statusBox.className='status error';statusBox.textContent='Unable to send your request. Please try again.';}finally{btn.disabled=false;btn.textContent='Request a Consultation';}});
+const form=document.getElementById('consultationForm');
+const statusBox=document.getElementById('formStatus');
+const btn=document.getElementById('submitButton');
+
+form.addEventListener('submit',async(e)=>{
+  e.preventDefault();
+
+  btn.disabled=true;
+  btn.textContent='Sending...';
+  statusBox.className='status';
+
+  try{
+    const r=await fetch(form.action,{
+      method:'POST',
+      body:new FormData(form),
+      headers:{'Accept':'application/json'}
+    });
+
+    if(!r.ok) throw new Error();
+
+    statusBox.className='status success';
+    statusBox.textContent='Thank you. Your request has been received.';
+    form.reset();
+
+  }catch{
+    statusBox.className='status error';
+    statusBox.textContent='Unable to send your request. Please try again.';
+
+  }finally{
+    btn.disabled=false;
+    btn.textContent='Request a Consultation';
+  }
+});
 </script>
-</body></html>
+
+</body>
+</html>
