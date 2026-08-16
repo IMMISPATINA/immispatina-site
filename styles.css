@@ -202,3 +202,104 @@ footer{display:grid;grid-template-columns:280px 1fr auto;gap:30px;align-items:ce
     font-size:20px;
   }
 }
+
+
+/* ===== FINAL SOCIAL ICON FIX ===== */
+
+/* Instagram: fixed small gradient badge */
+.footer-instagram{
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:8px !important;
+  margin-top:10px !important;
+  color:inherit;
+  font-size:.84rem !important;
+  line-height:1.2 !important;
+  text-decoration:none !important;
+}
+
+.ig-badge{
+  width:18px !important;
+  height:18px !important;
+  min-width:18px !important;
+  min-height:18px !important;
+  max-width:18px !important;
+  max-height:18px !important;
+  flex:0 0 18px !important;
+  border-radius:5px !important;
+  display:inline-grid !important;
+  place-items:center !important;
+  background:linear-gradient(135deg,#feda75 0%,#fa7e1e 28%,#d62976 52%,#962fbf 76%,#4f5bd5 100%) !important;
+  overflow:hidden !important;
+  vertical-align:middle !important;
+}
+
+.ig-badge svg{
+  width:14px !important;
+  height:14px !important;
+  min-width:14px !important;
+  max-width:14px !important;
+  min-height:14px !important;
+  max-height:14px !important;
+  display:block !important;
+  fill:none !important;
+  stroke:#fff !important;
+  stroke-width:1.7 !important;
+  stroke-linecap:round !important;
+  stroke-linejoin:round !important;
+}
+
+/* Contact Instagram row */
+.instagram-name{
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:8px !important;
+}
+
+/* WhatsApp: complete white mark inside green circle */
+.wa,
+.floating-wa{
+  background:#25D366 !important;
+  color:#fff !important;
+}
+
+.wa .wa-mark,
+.floating-wa .wa-mark{
+  width:27px !important;
+  height:27px !important;
+  min-width:27px !important;
+  max-width:27px !important;
+  min-height:27px !important;
+  max-height:27px !important;
+  display:block !important;
+  fill:none !important;
+  stroke:#fff !important;
+  stroke-width:1.7 !important;
+  stroke-linecap:round !important;
+  stroke-linejoin:round !important;
+}
+
+@media(max-width:650px){
+  .ig-badge{
+    width:17px !important;
+    height:17px !important;
+    min-width:17px !important;
+    min-height:17px !important;
+    max-width:17px !important;
+    max-height:17px !important;
+    flex-basis:17px !important;
+  }
+  .ig-badge svg{
+    width:13px !important;
+    height:13px !important;
+    min-width:13px !important;
+    max-width:13px !important;
+  }
+  .wa .wa-mark,
+  .floating-wa .wa-mark{
+    width:24px !important;
+    height:24px !important;
+    min-width:24px !important;
+    max-width:24px !important;
+  }
+}

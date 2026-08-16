@@ -425,71 +425,104 @@ footer>span{font-size:.78rem;color:#aab1bf}
     margin:0 0 10px !important;
   }
 }
-/* WhatsApp icon */
 
-.wa svg,
-.wa-icon{
-  width:28px;
-  height:28px;
-  display:block;
-  fill:none;
-  stroke:#ffffff;
-  stroke-width:2;
-  stroke-linecap:round;
-  stroke-linejoin:round;
-}
 
-@media(max-width:650px){
-  .wa svg,
-  .wa-icon{
-    width:24px;
-    height:24px;
-  }
-}
-/* Instagram */
+/* ===== FINAL SOCIAL ICON FIX ===== */
 
-.footer-instagram{
-  display:inline-flex;
-  align-items:center;
-  gap:8px;
-  margin-top:12px;
-  color:#c3cad5;
-  font-size:.84rem;
-  transition:.2s;
-}
-
-.footer-instagram:hover{
-  color:#ffffff;
-}
-
-.instagram-icon{
-  width:18px;
-  height:18px;
-  flex:0 0 18px;
-  display:block;
-}
-/* FORCE Instagram icon size */
-
+/* Instagram: fixed small gradient badge */
 .footer-instagram{
   display:inline-flex !important;
   align-items:center !important;
   gap:8px !important;
-  margin-top:12px !important;
+  margin-top:10px !important;
+  color:inherit;
   font-size:.84rem !important;
+  line-height:1.2 !important;
+  text-decoration:none !important;
 }
 
-.footer-instagram svg,
-.footer-instagram .instagram-icon{
+.ig-badge{
   width:18px !important;
   height:18px !important;
   min-width:18px !important;
-  max-width:18px !important;
   min-height:18px !important;
+  max-width:18px !important;
   max-height:18px !important;
   flex:0 0 18px !important;
-  display:block !important;
+  border-radius:5px !important;
+  display:inline-grid !important;
+  place-items:center !important;
+  background:linear-gradient(135deg,#feda75 0%,#fa7e1e 28%,#d62976 52%,#962fbf 76%,#4f5bd5 100%) !important;
+  overflow:hidden !important;
+  vertical-align:middle !important;
 }
 
-.footer-instagram span{
-  display:inline-block !important;
+.ig-badge svg{
+  width:14px !important;
+  height:14px !important;
+  min-width:14px !important;
+  max-width:14px !important;
+  min-height:14px !important;
+  max-height:14px !important;
+  display:block !important;
+  fill:none !important;
+  stroke:#fff !important;
+  stroke-width:1.7 !important;
+  stroke-linecap:round !important;
+  stroke-linejoin:round !important;
+}
+
+/* Contact Instagram row */
+.instagram-name{
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:8px !important;
+}
+
+/* WhatsApp: complete white mark inside green circle */
+.wa,
+.floating-wa{
+  background:#25D366 !important;
+  color:#fff !important;
+}
+
+.wa .wa-mark,
+.floating-wa .wa-mark{
+  width:27px !important;
+  height:27px !important;
+  min-width:27px !important;
+  max-width:27px !important;
+  min-height:27px !important;
+  max-height:27px !important;
+  display:block !important;
+  fill:none !important;
+  stroke:#fff !important;
+  stroke-width:1.7 !important;
+  stroke-linecap:round !important;
+  stroke-linejoin:round !important;
+}
+
+@media(max-width:650px){
+  .ig-badge{
+    width:17px !important;
+    height:17px !important;
+    min-width:17px !important;
+    min-height:17px !important;
+    max-width:17px !important;
+    max-height:17px !important;
+    flex-basis:17px !important;
+  }
+  .ig-badge svg{
+    width:13px !important;
+    height:13px !important;
+    min-width:13px !important;
+    max-width:13px !important;
+  }
+  .wa .wa-mark,
+  .floating-wa .wa-mark{
+    width:24px !important;
+    height:24px !important;
+    min-width:24px !important;
+    max-width:24px !important;
+  }
 }
