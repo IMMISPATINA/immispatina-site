@@ -1,30 +1,21 @@
-IMMISPATINA V8 — INTERNAL PAGES FIX
+IMMISPATINA V10 — INTERNAL PAGE ICONS ONLY
 
-Replace / upload ONLY:
+Replace ONLY:
 - digital-nomad.html
 - renewal.html
 - student-family.html
 - homologacion.html
-- about.html
-- service-pages.css (NEW)
-- service-pages.js (NEW)
+- service-pages.css
 
-DO NOT TOUCH:
+No changes to:
+- Home
 - index.html
 - home-premium.css
 - home-premium.js
 - contact.html
-- styles.css
-- script.js
-- assets/immispatina-logo.png
+- forms
+- hero photos
+- menu structure
 
-Fixes:
-- Back to Home removed from page hero
-- page title + description now sit professionally on the photo
-- larger logo on desktop, iPad and mobile
-- Digital Nomad photo changed to laptop + Spanish passport
-- iPad white space reduced
-- desktop cards remain 4-column
-- iPad cards become 2x2
-- mobile cards become clean single-column
-- separate CSS/JS prevents Home from being affected
+Change made:
+The unattractive 01 / 02 / 03 / 04 labels on internal feature cards were replaced with professional SVG icons relevant to each service.
