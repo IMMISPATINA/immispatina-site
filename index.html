@@ -8,16 +8,18 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="home-premium.css?v=20260816-4">
+  <link rel="stylesheet" href="home-premium.css?v=20260816-6">
 </head>
 <body>
 
 <header class="site-header">
-  <a class="brand" href="index.html">
+  <a class="brand" href="index.html" aria-label="IMMISPATINA Home">
     <img src="assets/immispatina-logo.png" alt="IMMISPATINA">
   </a>
 
-  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+  <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
 
   <nav class="main-nav">
     <a class="active" href="index.html">Home</a>
@@ -34,33 +36,64 @@
 <main>
 
 <section class="hero">
-  <div class="hero-shade"></div>
-  <div class="hero-content">
+  <div class="hero-copy">
     <span class="kicker">IMMIGRATION · RESIDENCY · RELOCATION</span>
     <h1>Your Trusted<br>Path to <em>Spain</em></h1>
     <p>Professional support for Digital Nomad Residency, renewals, family relocation and homologación across Spain.</p>
+
     <div class="hero-actions">
-      <a class="btn btn-primary" href="contact.html">Book Consultation</a>
-      <a class="btn btn-outline" href="#services">Explore Services</a>
+      <a class="btn btn-primary" href="contact.html">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v3M17 2v3M4 8h16M5 4h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Z"/></svg>
+        Book Consultation
+      </a>
+      <a class="btn btn-secondary" href="#services">
+        Explore Services
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-visual" aria-hidden="true">
+    <div class="sun"></div>
+    <svg class="skyline" viewBox="0 0 700 520" role="img">
+      <path class="skyline-fill" d="M15 450h70v-150h45v150h40v-230h55v230h55V185h75v265h45V250h55v200h35V135h80v315h45V280h55v170h60v55H15z"/>
+      <path class="skyline-line" d="M15 450h70v-150h45v150h40v-230h55v230h55V185h75v265h45V250h55v200h35V135h80v315h45V280h55v170h60"/>
+      <path class="skyline-line" d="M120 300h10M190 220h35M300 185h55M510 135h80"/>
+      <path class="skyline-line" d="M533 135l18-35 18 35M548 100v-27M540 82h18"/>
+    </svg>
+    <div class="hero-visual-card">
+      <span>Madrid · Spain</span>
+      <strong>Clear guidance.<br>Personal attention.</strong>
     </div>
   </div>
 </section>
 
-<section class="trust-strip">
+<section class="trust-strip" aria-label="Why clients choose IMMISPATINA">
   <div class="trust-item">
-    <div class="trust-icon">◉</div>
+    <div class="trust-icon">
+      <svg viewBox="0 0 24 24"><path d="M3 21h18M5 21V10h14v11M8 10V6h8v4M9 14h2M13 14h2M9 18h2M13 18h2"/></svg>
+    </div>
     <div><strong>Madrid Based</strong><span>Local knowledge of Spain</span></div>
   </div>
+
   <div class="trust-item">
-    <div class="trust-icon">◎</div>
+    <div class="trust-icon">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 4.5 6 4.5 9S15 18 12 21M12 3C9 6 7.5 9 7.5 12S9 18 12 21"/></svg>
+    </div>
     <div><strong>International Clients</strong><span>Remote support worldwide</span></div>
   </div>
+
   <div class="trust-item">
-    <div class="trust-icon">◌</div>
+    <div class="trust-icon">
+      <svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2.5 20c.5-4 2.5-6 5.5-6s5 2 5.5 6M10.5 20c.5-4 2.5-6 5.5-6s5 2 5.5 6"/></svg>
+    </div>
     <div><strong>Family Support</strong><span>Relocation for families</span></div>
   </div>
+
   <div class="trust-item">
-    <div class="trust-icon">▤</div>
+    <div class="trust-icon">
+      <svg viewBox="0 0 24 24"><path d="M6 3h12v18H6zM9 7h6M9 11h6M9 15h4"/></svg>
+    </div>
     <div><strong>Residency Focus</strong><span>Practical, clear guidance</span></div>
   </div>
 </section>
@@ -74,38 +107,55 @@
 
   <div class="service-grid">
     <article class="service-card">
-      <div class="service-icon">▣</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="12" rx="1"/><path d="M8 21h8M12 17v4"/></svg>
+      </div>
       <h3>Digital Nomad Residency</h3>
       <p>Support for remote professionals and international workers planning to reside in Spain.</p>
-      <a href="digital-nomad.html">Learn More →</a>
+      <a href="digital-nomad.html">Learn More <span>→</span></a>
     </article>
 
     <article class="service-card">
-      <div class="service-icon">↻</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M18 12a6 6 0 0 0-10-4L4 12M6 12a6 6 0 0 0 10 4l4-4"/></svg>
+      </div>
       <h3>Residency Renewal</h3>
       <p>Document review and practical preparation for eligible Spanish residence renewals.</p>
-      <a href="renewal.html">Learn More →</a>
+      <a href="renewal.html">Learn More <span>→</span></a>
     </article>
 
     <article class="service-card">
-      <div class="service-icon">◉◉</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3"/><circle cx="16" cy="8" r="3"/><path d="M2.5 20c.5-4 2.5-6 5.5-6s5 2 5.5 6M10.5 20c.5-4 2.5-6 5.5-6s5 2 5.5 6"/></svg>
+      </div>
       <h3>Student & Family</h3>
       <p>Guidance for student procedures and eligible family members moving to Spain.</p>
-      <a href="student-family.html">Learn More →</a>
+      <a href="student-family.html">Learn More <span>→</span></a>
     </article>
 
     <article class="service-card">
-      <div class="service-icon">◆</div>
+      <div class="service-icon">
+        <svg viewBox="0 0 24 24"><path d="M3 8l9-5 9 5-9 5z"/><path d="M6 10v5c3 2 9 2 12 0v-5M21 8v7"/></svg>
+      </div>
       <h3>Homologación</h3>
       <p>Administrative guidance for recognition of foreign academic qualifications.</p>
-      <a href="homologacion.html">Learn More →</a>
+      <a href="homologacion.html">Learn More <span>→</span></a>
     </article>
   </div>
 </section>
 
 <section class="section why">
-  <div class="why-image">
-    <img src="assets/why-madrid.jpg" alt="Madrid architecture">
+  <div class="why-visual" aria-hidden="true">
+    <div class="spain-ribbon"><i></i><i></i><i></i></div>
+    <svg viewBox="0 0 700 420" class="why-skyline">
+      <path d="M25 350h85v-85h55v85h55v-145h70v145h50v-190h85v190h50v-120h65v120h55v-80h65v80h40"/>
+      <path d="M382 160l20-42 20 42M402 118V82M390 95h24"/>
+      <path d="M35 350h620"/>
+    </svg>
+    <div class="why-badge">
+      <span>Madrid</span>
+      <strong>Spain-focused.<br>Internationally minded.</strong>
+    </div>
   </div>
 
   <div class="why-content">
@@ -164,7 +214,9 @@
 
 </main>
 
-<a class="floating-wa" href="https://wa.me/34687704601?text=Hello%20IMMISPATINA%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener" aria-label="WhatsApp IMMISPATINA">WA</a>
+<a class="floating-wa" href="https://wa.me/34687704601?text=Hello%20IMMISPATINA%2C%20I%20would%20like%20to%20book%20a%20consultation." target="_blank" rel="noopener" aria-label="WhatsApp IMMISPATINA">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.9 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z"/><path d="M9 8.5c.5 2 2 3.5 4 4l1.2-1.2c.2-.2.5-.3.8-.2l2 .8"/></svg>
+</a>
 
 <footer class="site-footer">
   <div class="footer-brand">
@@ -201,6 +253,6 @@
   </div>
 </footer>
 
-<script src="home-premium.js?v=20260816-4"></script>
+<script src="home-premium.js?v=20260816-6"></script>
 </body>
 </html>

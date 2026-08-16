@@ -1,37 +1,29 @@
-IMMISPATINA FINAL V1 — FULL REPLACEMENT
+IMMISPATINA HOME V6 — CLEAN PREMIUM FIX
 
-IMPORTANT:
-Replace the following files in the ROOT of your GitHub repository with the files in this package:
+Replace ONLY:
+- index.html
+- home-premium.css
+- home-premium.js
 
-index.html
-digital-nomad.html
-renewal.html
-homologacion.html
-student-family.html
-about.html
-contact.html
-styles.css
-script.js
+Do NOT touch:
+- styles.css
+- script.js
+- contact.html
+- service pages
+- assets/immispatina-logo.png
 
-KEEP your existing assets folder:
-assets/
-  immispatina-logo.png
+Important:
+The old hero-madrid.jpg and why-madrid.jpg are NO LONGER USED by Home.
+You can keep them or delete them later; they will not affect Home.
 
-DO NOT keep older copies of these HTML/CSS/JS files under different names.
-
-After upload:
-1. Commit changes to main.
-2. Wait for Cloudflare Pages deployment to finish.
-3. Open the site in an Incognito/Private browser window.
-4. Verify these URLs:
-   https://immispatina.com/
-   https://immispatina.com/digital-nomad.html
-   https://immispatina.com/renewal.html
-   https://immispatina.com/homologacion.html
-   https://immispatina.com/student-family.html
-   https://immispatina.com/about.html
-   https://immispatina.com/contact.html
-
-The Contact navigation now points to contact.html.
-The Contact form sends via Formspree endpoint:
-https://formspree.io/f/xjybepvb
+V6 fixes:
+- removes all corrupted/cropped mockup images
+- premium CSS-based Madrid visual instead
+- real inline SVG icons (no unknown glyphs)
+- clear premium buttons
+- larger balanced mobile logo
+- compact WhatsApp icon button
+- 2x2 mobile trust bar
+- 2x2 mobile service cards
+- 2x2 mobile benefit cards
+- consistent responsive spacing
