@@ -468,3 +468,28 @@ footer>span{font-size:.78rem;color:#aab1bf}
   flex:0 0 18px;
   display:block;
 }
+/* FORCE Instagram icon size */
+
+.footer-instagram{
+  display:inline-flex !important;
+  align-items:center !important;
+  gap:8px !important;
+  margin-top:12px !important;
+  font-size:.84rem !important;
+}
+
+.footer-instagram svg,
+.footer-instagram .instagram-icon{
+  width:18px !important;
+  height:18px !important;
+  min-width:18px !important;
+  max-width:18px !important;
+  min-height:18px !important;
+  max-height:18px !important;
+  flex:0 0 18px !important;
+  display:block !important;
+}
+
+.footer-instagram span{
+  display:inline-block !important;
+}
