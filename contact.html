@@ -161,6 +161,7 @@
 </footer>
 
 <script src="script.js"></script>
+
 <script>
 const form = document.getElementById('consultationForm');
 const statusBox = document.getElementById('formStatus');
@@ -168,37 +169,45 @@ const submitButton = document.getElementById('submitButton');
 
 form.addEventListener('submit', async (event) => {
   event.preventDefault();
+
   statusBox.className = 'status';
   statusBox.textContent = '';
+
   submitButton.disabled = true;
   submitButton.textContent = 'Sending...';
 
-  const payload = Object.fromEntries(new FormData(form).entries());
-
   try {
-    const response = await fetch('/api/contact', {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify(payload)
-    });
+    const response = await fetch(
+      'https://formspree.io/f/xjybepvb',
+      {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      }
+    );
 
-    const result = await response.json();
+    if (response.ok) {
+      statusBox.className = 'status success';
+      statusBox.textContent =
+        'Thank you. Your consultation request has been received. IMMISPATINA will contact you shortly.';
 
-    if (!response.ok || !result.success) {
-      throw new Error(result.error || 'Unable to send your request.');
+      form.reset();
+    } else {
+      throw new Error('Form submission failed');
     }
 
-    statusBox.className = 'status success';
-    statusBox.textContent = 'Thank you. Your consultation request has been received. IMMISPATINA will contact you shortly.';
-    form.reset();
   } catch (error) {
     statusBox.className = 'status error';
-    statusBox.textContent = 'We could not send your request right now. Please try again or contact us at info@immispatina.com.';
+    statusBox.textContent =
+      'Unable to send your request. Please try again or email info@immispatina.com.';
   } finally {
     submitButton.disabled = false;
     submitButton.textContent = 'Request a Consultation';
   }
 });
 </script>
+
 </body>
 </html>
