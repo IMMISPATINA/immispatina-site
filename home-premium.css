@@ -284,3 +284,23 @@ h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.05}
     background-position:center center !important;
   }
 }
+/* FINAL LOGO SIZE */
+.brand img{
+  width:320px !important;
+  height:auto !important;
+  max-height:72px !important;
+}
+
+@media(max-width:1050px){
+  .brand img{
+    width:285px !important;
+    max-height:64px !important;
+  }
+}
+
+@media(max-width:650px){
+  .brand img{
+    width:225px !important;
+    max-height:58px !important;
+  }
+}
