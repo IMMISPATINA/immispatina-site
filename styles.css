@@ -17,3 +17,188 @@ h1,h2,h3{font-family:"Playfair Display",serif;line-height:1.06}.eyebrow{font-siz
 footer{display:grid;grid-template-columns:280px 1fr auto;gap:30px;align-items:center;padding:34px clamp(22px,6vw,96px);background:#101829;color:#e9eaf0}footer img{height:54px;width:auto;max-width:260px;object-fit:contain;background:white;border-radius:12px;padding:6px}footer p{margin:0}footer small{display:block;margin-top:7px;color:#aab1bf;font-size:.72rem;max-width:720px}footer>span{font-size:.78rem;color:#aab1bf}
 @media(max-width:1000px){.menu{display:block}nav{display:none;position:absolute;top:76px;left:0;right:0;padding:22px;background:var(--paper);flex-direction:column;align-items:stretch;border-bottom:1px solid var(--line)}nav.open{display:flex}.hero,.subhero,.split,.about-home,.cta{grid-template-columns:1fr}.service-grid,.service-grid.six{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}footer{grid-template-columns:1fr}}
 @media(max-width:600px){header{height:68px;padding:0 18px}.logo img{height:40px;max-width:215px}nav{top:68px}.hero,.subhero{padding:52px 22px 70px}.hero h1,.subhero h1{font-size:3.2rem}.actions{flex-direction:column}.btn,.ghost{width:100%}.meta{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.hero-card,.subhero-card{min-height:390px;border-radius:115px 115px 22px 22px;padding:32px}.section{padding:70px 22px}.service-grid,.service-grid.six,.steps{grid-template-columns:1fr}.contactbox>a,.contactbox>p{flex-direction:column;gap:2px}footer{padding:28px 22px}.wa{width:50px;height:50px;right:16px;bottom:16px}}
+/* =========================================
+   CONTACT PAGE — PREMIUM FINISH
+   ========================================= */
+
+/* Instagram official gradient */
+.instagram-color{
+  display:inline-block;
+  font-size:21px;
+  line-height:1;
+}
+
+.instagram-color::before{
+  background:linear-gradient(
+    45deg,
+    #feda75 0%,
+    #fa7e1e 25%,
+    #d62976 50%,
+    #962fbf 75%,
+    #4f5bd5 100%
+  );
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  color:transparent;
+}
+
+
+/* Left side of Contact page */
+.form-layout > div:first-child{
+  position:relative;
+}
+
+/* Small premium CONTACT label */
+.form-layout > div:first-child > .eyebrow{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:12px;
+}
+
+.form-layout > div:first-child > .eyebrow::before{
+  content:"";
+  width:26px;
+  height:2px;
+  background:linear-gradient(90deg,var(--wine),var(--gold));
+  border-radius:10px;
+}
+
+
+/* Useful information heading */
+.form-layout > div:first-child > h2{
+  max-width:620px;
+  font-size:clamp(2.2rem,3.8vw,4rem);
+  line-height:1.07;
+  margin:0 0 30px;
+}
+
+
+/* Premium contact information card */
+.contactbox{
+  position:relative;
+  overflow:hidden;
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.98),
+      rgba(249,245,239,.96)
+    );
+  border:1px solid #e6ddd3;
+  border-radius:26px;
+  padding:12px 22px;
+  box-shadow:
+    0 18px 55px rgba(20,26,42,.07),
+    0 2px 8px rgba(20,26,42,.03);
+}
+
+
+/* Gold decorative line */
+.contactbox::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:28px;
+  bottom:28px;
+  width:3px;
+  border-radius:0 5px 5px 0;
+  background:linear-gradient(
+    to bottom,
+    var(--gold),
+    var(--wine)
+  );
+}
+
+
+/* Each contact row */
+.contactbox > a,
+.contactbox > p{
+  position:relative;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:24px;
+  padding:19px 10px 19px 18px;
+  border-bottom:1px solid rgba(113,19,34,.10);
+  margin:0;
+  transition:
+    background .2s ease,
+    transform .2s ease,
+    padding .2s ease;
+}
+
+.contactbox > a:last-child,
+.contactbox > p:last-child{
+  border-bottom:none;
+}
+
+
+/* Labels: Email / Spain / Türkiye / Instagram */
+.contactbox span{
+  color:#8c8782;
+  font-size:.82rem;
+  font-weight:500;
+  letter-spacing:.04em;
+}
+
+
+/* Main contact details */
+.contactbox b{
+  color:var(--ink);
+  font-size:.97rem;
+  font-weight:700;
+}
+
+
+/* Hover */
+.contactbox > a:hover{
+  color:inherit;
+  background:rgba(184,138,50,.055);
+  transform:none;
+  padding-left:22px;
+}
+
+
+/* Instagram row */
+.instagram-name{
+  display:inline-flex;
+  align-items:center;
+  gap:9px;
+}
+
+
+/* Mobile */
+@media(max-width:600px){
+
+  .form-layout > div:first-child > h2{
+    font-size:2.25rem;
+    margin-bottom:24px;
+  }
+
+  .contactbox{
+    padding:8px 16px;
+    border-radius:22px;
+  }
+
+  .contactbox > a,
+  .contactbox > p{
+    flex-direction:row;
+    align-items:center;
+    gap:12px;
+    padding:16px 8px 16px 14px;
+  }
+
+  .contactbox span{
+    font-size:.75rem;
+  }
+
+  .contactbox b{
+    font-size:.86rem;
+    text-align:right;
+  }
+
+  .instagram-color{
+    font-size:20px;
+  }
+}
