@@ -1,29 +1,20 @@
-IMMISPATINA MULTILINGUAL — EN / ES / FA / TR
+IMMISPATINA — SOCIAL ICON MOBILE/TABLET HOTFIX
 
-Upload the complete contents to the site root.
+Replace ONLY these 3 files:
+- home-premium.css
+- service-pages.css
+- styles.css
 
-English remains at /
-Spanish: /es/
-Persian: /fa/ (RTL)
-Turkish: /tr/
+Do NOT replace any HTML files.
 
-All 8 pages are included in every language:
-Home, Digital Nomad, Renewal, Homologación, Student & Family, Housing, About, Contact.
+Fix:
+- Instagram icon is hard-limited to 18px desktop/tablet and 17px mobile.
+- Inner Instagram SVG is hard-limited to 13px / 12px.
+- Generic footer span/svg rules can no longer enlarge the icon.
+- No changes to languages, translations, forms, layout, WhatsApp, or pages.
 
-Features:
-- EN / ES / FA / TR selector on every page.
-- Same-page language switching.
-- hreflang SEO tags.
-- Persian RTL layout.
-- Localized title/meta description.
-- Contact keeps the existing Formspree endpoint.
-- Localized Contact forms add site_language.
-
-Keep your existing /assets folder unchanged.
-
-
-PERSIAN PREMIUM V2
-- Persian font changed to Vazirmatn via Google Fonts.
-- Persian headings, line-height, card alignment and mobile typography refined.
-- RTL header, footer, forms and WhatsApp placement refined.
-- No font files are included in this package.
+After upload:
+1. Commit all 3 CSS files.
+2. Wait for deployment.
+3. Test in an Incognito/private tab.
+4. On iPhone/iPad, fully close the browser tab once if the old cached CSS persists.
