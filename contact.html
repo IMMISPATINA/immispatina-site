@@ -97,19 +97,7 @@
       align-items:center;
       gap:8px;
     }
-
-    .instagram-icon{
-      width:18px;
-      height:18px;
-      flex:0 0 18px;
-      stroke:currentColor;
-      fill:none;
-      stroke-width:1.8;
-      stroke-linecap:round;
-      stroke-linejoin:round;
-    }
-
-    .footer-social{
+.footer-social{
       margin-top:10px;
     }
 
@@ -132,6 +120,118 @@
         grid-template-columns:1fr;
       }
     }
+  
+    /* FINAL CONTACT SOCIAL ICON FIX */
+    .ig-badge{
+      width:18px !important;
+      height:18px !important;
+      min-width:18px !important;
+      min-height:18px !important;
+      max-width:18px !important;
+      max-height:18px !important;
+      flex:0 0 18px !important;
+      border-radius:5px !important;
+      display:inline-grid !important;
+      place-items:center !important;
+      background:linear-gradient(135deg,#feda75 0%,#fa7e1e 28%,#d62976 52%,#962fbf 76%,#4f5bd5 100%) !important;
+      overflow:hidden !important;
+      vertical-align:middle !important;
+    }
+
+    .ig-badge svg{
+      width:14px !important;
+      height:14px !important;
+      min-width:14px !important;
+      min-height:14px !important;
+      max-width:14px !important;
+      max-height:14px !important;
+      display:block !important;
+      fill:none !important;
+      stroke:#fff !important;
+      stroke-width:1.7 !important;
+      stroke-linecap:round !important;
+      stroke-linejoin:round !important;
+    }
+
+    .instagram-name{
+      display:inline-flex !important;
+      align-items:center !important;
+      gap:8px !important;
+    }
+
+    .footer-social .footer-instagram{
+      display:inline-flex !important;
+      align-items:center !important;
+      gap:8px !important;
+      color:#c3cad5 !important;
+      font-size:.84rem !important;
+      line-height:1.2 !important;
+      margin-top:10px !important;
+    }
+
+    .wa{
+      width:58px !important;
+      height:58px !important;
+      border-radius:50% !important;
+      background:#25D366 !important;
+      color:#fff !important;
+      display:flex !important;
+      align-items:center !important;
+      justify-content:center !important;
+      padding:0 !important;
+      overflow:hidden !important;
+    }
+
+    .wa .wa-mark{
+      width:29px !important;
+      height:29px !important;
+      min-width:29px !important;
+      min-height:29px !important;
+      max-width:29px !important;
+      max-height:29px !important;
+      display:block !important;
+      fill:none !important;
+      stroke:#fff !important;
+      stroke-width:1.8 !important;
+      stroke-linecap:round !important;
+      stroke-linejoin:round !important;
+    }
+
+    @media(max-width:600px){
+      .ig-badge{
+        width:17px !important;
+        height:17px !important;
+        min-width:17px !important;
+        min-height:17px !important;
+        max-width:17px !important;
+        max-height:17px !important;
+        flex-basis:17px !important;
+      }
+
+      .ig-badge svg{
+        width:13px !important;
+        height:13px !important;
+        min-width:13px !important;
+        min-height:13px !important;
+        max-width:13px !important;
+        max-height:13px !important;
+      }
+
+      .wa{
+        width:52px !important;
+        height:52px !important;
+      }
+
+      .wa .wa-mark{
+        width:25px !important;
+        height:25px !important;
+        min-width:25px !important;
+        min-height:25px !important;
+        max-width:25px !important;
+        max-height:25px !important;
+      }
+    }
+
   </style>
 </head>
 
@@ -150,6 +250,7 @@
     <a href="renewal.html">Renewal</a>
     <a href="homologacion.html">Homologación</a>
     <a href="student-family.html">Student & Family</a>
+    <a href="housing.html">Housing</a>
     <a href="about.html">About</a>
     <a href="contact.html" class="outline">Contact</a>
   </nav>
@@ -195,8 +296,14 @@
         <b>+90 537 517 8488</b>
       </a>
 
-      <a class="instagram-link" href="https://www.instagram.com/immispatina/" target="_blank" rel="noopener noreferrer">
+      <a
+        class="instagram-link"
+        href="https://www.instagram.com/immispatina/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <span>Instagram</span>
+
         <b class="instagram-name">
           <span class="ig-badge" aria-hidden="true">
             <svg viewBox="0 0 24 24">
@@ -294,11 +401,12 @@
   href="https://wa.me/34687704601?text=Hello%20IMMISPATINA%2C%20I%20would%20like%20to%20book%20a%20consultation."
   target="_blank"
   rel="noopener"
+  aria-label="WhatsApp IMMISPATINA"
 >
   <svg class="wa-mark" viewBox="0 0 32 32" aria-hidden="true">
-  <path d="M16 4.2c-6.5 0-11.8 5.1-11.8 11.4 0 2.2.7 4.3 1.9 6.1L4.4 27.8l6.3-1.7c1.6.8 3.5 1.3 5.3 1.3 6.5 0 11.8-5.1 11.8-11.4S22.5 4.2 16 4.2Z"></path>
-  <path d="M11.1 10.2c.3-.6.7-.6 1-.6h.7c.2 0 .5.1.6.5l1 2.3c.1.3.1.6-.1.9l-.8 1c-.2.2-.2.5-.1.7.7 1.6 2 2.9 3.7 3.7.3.1.5.1.7-.1l1.1-1.2c.2-.3.5-.3.8-.2l2.3 1.1c.3.2.5.4.5.7 0 .6-.3 1.8-1.1 2.5-.8.7-1.9 1.1-3.2.9-1.5-.2-3.8-1-6.3-3.3-2.1-1.9-3.5-4.3-3.9-5.8-.4-1.3-.1-2.4.5-3.1Z"></path>
-</svg>
+    <path d="M16 4.2c-6.5 0-11.8 5.1-11.8 11.4 0 2.2.7 4.3 1.9 6.1L4.4 27.8l6.3-1.7c1.6.8 3.5 1.3 5.3 1.3 6.5 0 11.8-5.1 11.8-11.4S22.5 4.2 16 4.2Z"></path>
+    <path d="M11.1 10.2c.3-.6.7-.6 1-.6h.7c.2 0 .5.1.6.5l1 2.3c.1.3.1.6-.1.9l-.8 1c-.2.2-.2.5-.1.7.7 1.6 2 2.9 3.7 3.7.3.1.5.1.7-.1l1.1-1.2c.2-.3.5-.3.8-.2l2.3 1.1c.3.2.5.4.5.7 0 .6-.3 1.8-1.1 2.5-.8.7-1.9 1.1-3.2.9-1.5-.2-3.8-1-6.3-3.3-2.1-1.9-3.5-4.3-3.9-5.8-.4-1.3-.1-2.4.5-3.1Z"></path>
+  </svg>
 </a>
 
 <footer>
@@ -309,16 +417,22 @@
     <p>Residency · Immigration Support · Relocation · Spain</p>
 
     <div class="footer-social">
-      <a class="footer-instagram" href="https://www.instagram.com/immispatina/" target="_blank" rel="noopener noreferrer" aria-label="Instagram @immispatina">
-  <span class="ig-badge" aria-hidden="true">
-    <svg viewBox="0 0 24 24">
-      <rect x="5" y="5" width="14" height="14" rx="4"></rect>
-      <circle cx="12" cy="12" r="3.2"></circle>
-      <circle cx="16.7" cy="7.4" r="1"></circle>
-    </svg>
-  </span>
-  <span>Instagram @immispatina</span>
-</a>
+      <a
+        class="footer-instagram"
+        href="https://www.instagram.com/immispatina/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Instagram @immispatina"
+      >
+        <span class="ig-badge" aria-hidden="true">
+          <svg viewBox="0 0 24 24">
+            <rect x="5" y="5" width="14" height="14" rx="4"></rect>
+            <circle cx="12" cy="12" r="3.2"></circle>
+            <circle cx="16.7" cy="7.4" r="1"></circle>
+          </svg>
+        </span>
+        <span>Instagram @immispatina</span>
+      </a>
     </div>
 
     <small>

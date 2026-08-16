@@ -1,25 +1,19 @@
-IMMISPATINA — ALL PAGES SOCIAL ICON FIX
+IMMISPATINA — HOUSING MENU UPDATE
 
-Replace these files in GitHub:
+Replace/upload these HTML files:
 - index.html
-- contact.html
 - digital-nomad.html
 - renewal.html
 - homologacion.html
 - student-family.html
+- housing.html
 - about.html
-- styles.css
-- service-pages.css
-- home-premium.css
+- contact.html
 
-What is fixed:
-- Instagram icon is now a fixed 18px gradient badge on every page.
-- WhatsApp icon is now a complete white SVG mark on a green circle on every page.
-- No Font Awesome or external icon library is required.
-- No WA text remains.
-- Existing content, hero images, forms and menus were preserved.
+Change made:
+- Added "Housing" to the navigation menu on every page.
+- housing.html is included as the new Housing & Accommodation page.
 
-After upload:
-1. Commit all files together.
-2. Wait for Cloudflare deploy.
-3. Hard refresh / incognito test.
+No CSS files were changed.
+No form logic was changed.
+No existing page content was redesigned.
