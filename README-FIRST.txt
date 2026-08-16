@@ -1,21 +1,18 @@
-IMMISPATINA V12 — NO ICONS
+IMMISPATINA HTML FIX
 
-This version removes all icons and numbers from internal service cards.
+Modified HTML only. No CSS files were changed.
 
-Instead, each card has only a very small burgundy-to-gold accent line above the title.
-This avoids oversized SVG/icons completely and gives a cleaner premium/legal-services look.
+Changes:
+- about.html: WA text -> WhatsApp SVG icon; Instagram added to footer
+- digital-nomad.html: WA text -> WhatsApp SVG icon; Instagram added to footer
+- renewal.html: WA text -> WhatsApp SVG icon; Instagram added to footer
+- homologacion.html: WA text -> WhatsApp SVG icon; Instagram added to footer
+- student-family.html: WA text -> WhatsApp SVG icon; Instagram added to footer
+- index.html: existing WhatsApp icon preserved; Instagram added to footer
 
-Replace ONLY:
-- digital-nomad.html
-- renewal.html
-- student-family.html
-- homologacion.html
-- service-pages.css
+Instagram:
+https://www.instagram.com/immispatina/
 
-Do NOT change:
-- Home / index.html
-- home-premium.css
-- Contact
-- Formspree
-- photos
-- menus
+Next step:
+Send service-pages.css and home-premium.css/styles.css so the new .wa-icon,
+.instagram-icon and .footer-instagram classes can be styled consistently.
