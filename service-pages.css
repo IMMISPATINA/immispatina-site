@@ -381,3 +381,47 @@ footer>span{font-size:.78rem;color:#aab1bf}
     margin:3px 0 10px !important;
   }
 }
+
+
+/* ===== V12: NO ICONS — CLEAN PROFESSIONAL CARDS ===== */
+/* Remove all visual icon remnants safely */
+.feature-icon{
+  display:none !important;
+}
+
+/* Clean editorial card styling */
+.feature-card{
+  position:relative;
+  padding-top:30px !important;
+}
+
+/* Small refined brand accent instead of an icon/number */
+.feature-card::before{
+  content:"";
+  display:block;
+  width:26px;
+  height:3px;
+  border-radius:999px;
+  background:linear-gradient(90deg,var(--wine),var(--gold));
+  margin-bottom:22px;
+}
+
+.feature-card h3{
+  margin:0 0 12px !important;
+}
+
+@media(max-width:650px){
+  .feature-card{
+    padding-top:22px !important;
+  }
+
+  .feature-card::before{
+    width:22px;
+    height:3px;
+    margin-bottom:16px;
+  }
+
+  .feature-card h3{
+    margin:0 0 10px !important;
+  }
+}
