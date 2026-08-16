@@ -1,1 +1,0 @@
-IMMISPATINA V2 Phase 1. Replace your existing GitHub files with these files and the assets folder. Cloudflare Pages will redeploy automatically after commit.
